@@ -188,8 +188,8 @@ def main(_):
         print("%s (%.2f)" % (k, v))
     print("--------")
 
-  if not os.path.isdir(FLAGS.output.split('/')[:-1]):
-    os.makedirs(FLAGS.output)
+  if not os.path.isdir(os.path.dirname(FLAGS.output)):
+    os.makedirs(os.path.dirname(FLAGS.output))
 
   emotion_words_df = pd.DataFrame(dicts)
   emotion_words_df.to_csv(FLAGS.output, index=False, encoding="utf-8")
