@@ -1,5 +1,7 @@
 # GoEmotions
 
+Copy from https://github.com/google-research/google-research/tree/master/goemotions
+
 **GoEmotions** is a corpus of 58k carefully curated comments extracted from Reddit,
 with human annotations to 27 emotion categories or Neutral.
 
