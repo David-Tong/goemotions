@@ -188,7 +188,7 @@ def main(_):
         print("%s (%.2f)" % (k, v))
     print("--------")
 
-  if not os.path.isdir(FLAGS.output):
+  if not os.path.isdir(FLAGS.output.split('/')[:-1]):
     os.makedirs(FLAGS.output)
 
   emotion_words_df = pd.DataFrame(dicts)
